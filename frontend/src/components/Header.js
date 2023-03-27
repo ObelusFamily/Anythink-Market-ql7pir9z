@@ -40,7 +40,7 @@ const LoggedInView = (props) => {
           <img
             src={props.currentUser.image}
             className="user-pic pr-1"
-            alt={props.currentUser.username}
+            alt={props.currentUser.username??"placeholder.png"}
           />
           {props.currentUser.username}
         </Link>
